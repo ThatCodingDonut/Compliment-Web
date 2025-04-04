@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliment Chain</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Compliment Chain</h1>
+      <p class="tagline">Spread kindness, one compliment at a time ✨</p>
+    </header>
+
+    <section class="compliment-display">
+      <h2>Last Compliment:</h2>
+      <div id="last-compliment">
+        <p id="compliment-text">Loading compliment...</p>
+      </div>
+    </section>
+
+    <section class="compliment-form">
+      <h2>Leave a Compliment</h2>
+      <form id="compliment-form">
+        <input type="text" id="name-input" placeholder="Your name" required>
+        <textarea id="compliment-input" placeholder="Write your compliment here..." required></textarea>
+        <button type="submit">Send Compliment</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- App Script -->
+  <script src="script.js"></script>
+</body>
+</html>
