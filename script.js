@@ -22,7 +22,7 @@ async function submitCompliment(event) {
   const compliment = document.getElementById("compliment-input").value.trim();
 
   if (!name || !compliment) {
-    alert("Please fill in both your name and compliment.");
+    alert("Please fill in your name and a kind message.");
     return;
   }
 
@@ -35,9 +35,9 @@ async function submitCompliment(event) {
       body: JSON.stringify({ name, compliment })
     });
     if (!response.ok) throw new Error("Network response was not ok.");
-    // Refresh the compliment display after submission
+    // Refresh the compliment display once submitted
     fetchLastCompliment();
-    // Clear input fields
+    // Clear the input fields
     document.getElementById("name-input").value = "";
     document.getElementById("compliment-input").value = "";
   } catch (error) {
